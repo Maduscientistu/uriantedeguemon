@@ -1,0 +1,14 @@
+rep = int(input())
+pedra = ["tesoura","lagarto"]
+Spock = ["pedra","tesoura"]
+tesoura = ["papel","lagarto"]
+lagarto = ["Spock", "papel"]
+papel = ["pedra", "Spock"]
+for re in range(rep):
+  shel, raj = input().split()
+  if raj in globals()[shel]:
+    print("Caso #%d: Bazinga!"% (re+1))
+  elif shel in globals()[raj]:
+    print("Caso #%d: Raj trapaceou!"% (re+1))
+  else:
+    print("Caso #%d: De novo!"% (re+1))
