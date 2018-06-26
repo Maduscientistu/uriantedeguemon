@@ -1,0 +1,12 @@
+while True:
+  try:
+    x=int(input())
+    if (0<=x<=100):
+
+      if x==0:
+        print("vai ter copa!")
+      else:
+        print("vai ter duas!")
+  except EOFError:
+    break
+    
