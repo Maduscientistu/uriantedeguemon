@@ -1,0 +1,17 @@
+rep = int(input())
+for re in range(rep):
+  arep = int(input())
+  pals = []
+  ing = False
+  ble = False
+  for r in range(arep):
+    pal = input()
+    if pal not in pals and ble:
+      ing = True
+    else:
+      pals.append(pal)
+      ble = True
+  if ing:
+    print("ingles")
+  else:
+    print(pal)
